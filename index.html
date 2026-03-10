@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right Bridges - Strategic Partnership Agency</title>
+    <meta name="description" content="Unlock new markets through strategic partnerships with Right Bridges. We help businesses grow via joint ventures and innovative market access solutions.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS for elements that need more precise styling */
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(12, 74, 110, 0.9) 0%, rgba(30, 64, 175, 0.8) 100%);
+        }
+        .nav-link:hover::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #3b82f6;
+            margin-top: 2px;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .solution-card:hover .solution-icon {
+            transform: scale(1.1);
+            color: #3b82f6;
+        }
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#home" class="flex items-center">
+                <div class="w-10 h-10 rounded-full bg-blue-700 flex items-center justify-center mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <span class="text-xl font-bold text-blue-800">Right Bridges</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Home</a>
+                <a href="#partnerships" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Partnerships</a>
+                <a href="#solutions" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Solutions</a>
+                <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 font-medium">About</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+            </nav>
+            
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white">
+            <div class="px-4 py-2 space-y-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600">Home</a>
+                <a href="#partnerships" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600">Partnerships</a>
+                <a href="#solutions" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600">Solutions</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600">About</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="relative overflow-hidden">
+            <!-- Hero Section -->
+            <div class="hero-gradient text-white py-20 md:py-32">
+                <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4">Bridges to New Growth</h1>
+                        <p class="text-xl md:text-2xl mb-8">Unlock new markets through strategic partnerships</p>
+                        <a href="#contact" class="inline-block bg-white text-blue-700 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition duration-300">Explore Partnerships</a>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Business partnership handshake" class="rounded-lg shadow-xl w-full h-auto">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Trust Badge -->
+            <div class="container mx-auto px-4 -mt-8 relative z-10">
+                <div class="bg-white rounded-lg shadow-lg p-6 max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center">
+                    <div class="flex items-center mb-4 md:mb-0 md:mr-10">
+                        <div class="text-4xl font-bold text-blue-700 mr-3">4.8</div>
+                        <div class="text-yellow-400 text-2xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <p class="text-gray-700 italic">"Right Bridges transformed our approach to partnerships, helping us expand into three new markets within a year."</p>
+                        <p class="font-semibold text-gray-800 mt-2">— Sarah Johnson, CEO of MarketGrow</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="py-16 bg-gray-50">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">How We Can Help You Grow</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                            <div class="text-blue-600 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Strategic Partnerships</h3>
+                            <p class="text-gray-600">Create win-win collaborations that open doors to new opportunities and markets.</p>
+                            <a href="#partnerships" class="inline-block mt-4 text-blue-600 font-medium hover:text-blue-800">Learn more →</a>
+                        </div>
+                        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                            <div class="text-blue-600 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Market Access</h3>
+                            <p class="text-gray-600">Overcome barriers and establish your presence in previously inaccessible markets.</p>
+                            <a href="#solutions" class="inline-block mt-4 text-blue-600 font-medium hover:text-blue-800">Learn more →</a>
+                        </div>
+                        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                            <div class="text-blue-600 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Growth Strategies</h3>
+                            <p class="text-gray-600">Data-driven approaches to sustainable expansion and long-term success.</p>
+                            <a href="#contact" class="inline-block mt-4 text-blue-600 font-medium hover:text-blue-800">Get started →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partnerships Section -->
+        <section id="partnerships" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Empowering Mutual Growth Through Collaboration</h2>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row items-center mb-16">
+                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Partnership Philosophy</h3>
+                        <p class="text-gray-600 mb-4">At Right Bridges, we believe the most successful business relationships are built on mutual benefit, transparency, and shared vision.</p>
+                        <p class="text-gray-600 mb-4">We don't just connect companies—we create strategic alliances where both parties thrive, combining strengths to achieve more together than they could alone.</p>
+                        <p class="text-gray-600">Our approach focuses on long-term value creation, ensuring partnerships remain productive and profitable for years to come.</p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Team collaboration" class="rounded-lg shadow-lg w-full h-auto">
+                    </div>
+                </div>
+                
+                <h3 class="text-2xl font-semibold text-center text-gray-800 mb-8">What Our Partners Say</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="testimonial-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold mr-4">JD</div>
+                            <div>
+                                <h4 class="font-semibold">James Donovan</h4>
+                                <p class="text-sm text-gray-500">TechSolutions Inc.</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"Right Bridges introduced us to the perfect European partner. Our joint venture has exceeded all projections, increasing our revenue by 35% in the first year."</p>
+                        <div class="mt-4 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold mr-4">ML</div>
+                            <div>
+                                <h4 class="font-semibold">Maria Lopez</h4>
+                                <p class="text-sm text-gray-500">Global Health Partners</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"Their market access strategies helped us navigate complex regulations in Asia. We're now operational in three new countries thanks to their expertise."</p>
+                        <div class="mt-4 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold mr-4">TW</div>
+                            <div>
+                                <h4 class="font-semibold">Thomas Wright</h4>
+                                <p class="text-sm text-gray-500">EcoInnovate</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"The partnership framework Right Bridges developed for us created a foundation for sustainable growth that continues to pay dividends years later."</p>
+                        <div class="mt-4 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Innovative Joint Venture & Market Access Solutions</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Tailored strategies to help your business expand into new markets and form profitable partnerships</p>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <div class="solution-card bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <div class="solution-icon text-blue-600 mb-6 text-4xl transition duration-300">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Partnership Development</h3>
+                        <p class="text-gray-600 mb-4">We identify and vet potential partners that align with your business goals, values, and strategic objectives.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                                <span>Comprehensive partner screening</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                                <span>Strategic alignment assessment</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                                <span>Cultural fit evaluation</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="solution-card bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <div class="solution-icon text-blue-600 mb-6 text-4xl transition duration-300">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Market Entry Strategy</h3>
+                        <p class="text-gray-600 mb-4">Customized approaches to overcome regulatory, cultural, and competitive barriers in new markets.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                                <span>Regulatory compliance mapping</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                                <span>Localization strategy</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                                <span>Go-to-market planning</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="solution-card bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <div class="solution-icon text-blue-600 mb-6 text-4xl transition duration-300">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Joint Venture Structuring</h3>
+                        <p class="text-gray-600 mb-4">Legal and operational frameworks designed to protect your interests while maximizing collaboration benefits.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                                <span>Equity and governance models</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                                <span>Risk allocation strategies</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                                <span>Performance metrics and KPIs</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-700 rounded-lg shadow-xl p-8 md:p-12 text-white">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-2/3 mb-6 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-3">Ready to Explore Your Growth Opportunities?</h3>
+                            <p class="mb-0">Schedule a free consultation to discuss how strategic partnerships can transform your business.</p>
+                        </div>
+                        <div class="md:w-1/3 text-center md:text-right">
+                            <a href="#contact" class="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition duration-300">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center mb-16">
+                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Building Bridges Since 2010</h2>
+                        <p class="text-gray-600 mb-4">Right Bridges was founded on the principle that businesses grow faster and stronger when they work together. What began as a consultancy helping small businesses find local partners has evolved into a global strategic partnership agency.</p>
+                        <p class="text-gray-600 mb-6">Today, we've facilitated over 200 successful partnerships across 35 countries, helping companies of all sizes achieve their growth objectives through collaboration.</p>
+                        <div class="flex space-x-4">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600">200+</div>
+                                <div class="text-gray-600">Partnerships</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600">35</div>
+                                <div class="text-gray-600">Countries</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600">12</div>
+                                <div class="text-gray-600">Years</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Right Bridges team" class="rounded-lg shadow-lg w-full h-auto">
+                    </div>
+                </div>
+                
+                <div class="text-center mb-16">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Our Core Values</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="text-blue-600 text-3xl mb-4">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h4 class="font-semibold text-lg mb-2">Mutual Benefit</h4>
+                            <p class="text-gray-600">We only facilitate partnerships where all parties stand to gain meaningful value.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="text-blue-600 text-3xl mb-4">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4 class="font-semibold text-lg mb-2">Innovation</h4>
+                            <p class="text-gray-600">We constantly seek creative solutions to market access challenges.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="text-blue-600 text-3xl mb-4">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4 class="font-semibold text-lg mb-2">Integrity</h4>
+                            <p class="text-gray-600">We maintain the highest ethical standards in all our engagements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Let's Grow Together</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ready to explore how strategic partnerships can transform your business? Get in touch today.</p>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+                </div>
+                
+                <div class="flex flex-col lg:flex-row">
+                    <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                        <form id="contact-form" class="bg-white p-8 rounded-lg shadow-md">
+                            <div class="mb-6">
+                                <label for="first-name" class="block text-gray-700 font-medium mb-2">First Name *</label>
+                                <input type="text" id="first-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="company" class="block text-gray-700 font-medium mb-2">Company / Industry *</label>
+                                <input type="text" id="company" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="product" class="block text-gray-700 font-medium mb-2">Product or Service *</label>
+                                <input type="text" id="product" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email *</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">How Can We Help? *</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <button type="submit" class="w-full bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Send Message</button>
+                            </div>
+                            <p class="text-sm text-gray-500">We'll never share your information with third parties. See our <a href="#" class="text-blue-600 hover:underline">Privacy Policy</a>.</p>
+                        </form>
+                    </div>
+                    
+                    <div class="lg:w-1/2 lg:pl-10">
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                            <h3 class="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="text-blue-600 text-xl mr-4 mt-1">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">Email</h4>
+                                        <a href="mailto:contact@rightbridges.com" class="text-gray-600 hover:text-blue-600">contact@rightbridges.com</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="text-blue-600 text-xl mr-4 mt-1">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">Phone</h4>
+                                        <a href="tel:+1234567890" class="text-gray-600 hover:text-blue-600">+1 (234) 567-890</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="text-blue-600 text-xl mr-4 mt-1">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">Headquarters</h4>
+                                        <p class="text-gray-600">123 Bridge Street, Suite 500<br>New York, NY 10001</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-10">
+                                <h4 class="font-medium text-gray-800 mb-4">Follow Us</h4>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center hover:bg-blue-200 transition duration-300">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center hover:bg-blue-200 transition duration-300">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center hover:bg-blue-200 transition duration-300">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-10 bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-gray-800 mb-2">Office Hours</h4>
+                                <p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM EST<br>Saturday - Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="#" class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-700 flex items-center justify-center mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <span class="text-lg font-bold">Right Bridges</span>
+                    </a>
+                    <p class="text-gray-400">Strategic partnership agency helping businesses grow through joint ventures and innovative market access solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#partnerships" class="text-gray-400 hover:text-white transition duration-300">Partnerships</a></li>
+                        <li><a href="#solutions" class="text-gray-400 hover:text-white transition duration-300">Solutions</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Solutions</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Partnership Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Market Entry Strategy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Joint Venture Structuring</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Strategic Alliances</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <address class="not-italic text-gray-400">
+                        <p>123 Bridge Street, Suite 500</p>
+                        <p>New York, NY 10001</p>
+                        <p class="mt-2"><a href="mailto:contact@rightbridges.com" class="hover:text-white transition duration-300">contact@rightbridges.com</a></p>
+                        <p><a href="tel:+1234567890" class="hover:text-white transition duration-300">+1 (234) 567-890</a></p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 Right Bridges. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-sm">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+        
+        // Close mobile menu when clicking a link
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const firstName = document.getElementById('first-name').value;
+            const email = document.getElementById('email').value;
+            
+            // In a real implementation, you would send this data to your server
+            console.log('Form submitted:', { firstName, email });
+            
+            // Show success message
+            alert(`Thank you, ${firstName}! We've received your message and will contact you soon at ${email}.`);
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=LeonTrades/rightbridges" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
